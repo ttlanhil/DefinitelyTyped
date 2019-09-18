@@ -37,6 +37,7 @@ export interface ClientOpts {
     tls?: any;
     prefix?: string;
     retry_strategy?: RetryStrategy;
+    allow_disconnected_slaves?: boolean;
 }
 
 export type Callback<T> = (err: Error | null, reply: T) => void;
